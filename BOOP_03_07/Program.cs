@@ -4,6 +4,15 @@ namespace BOOP_03_07
 {
     class Program
     {
+
+        #region Exercise
+        struct Point
+        {
+            public int X, Y;
+            public double Vector => Math.Sqrt(X * X + Y * Y);
+        }
+        #endregion
+
         static void Main(string[] args)
         {
 
@@ -48,8 +57,13 @@ namespace BOOP_03_07
             foreach (var item in words2)
                 Console.WriteLine(item);
         }
-
-        // Exercise:
-        // Make an array of struct Point and class Point, iterate over it and find the point with largest distance from (0,0)
     }
 }
+// Exercise:
+// 1.   Make an array of struct Point, initialize it with 10 different Point cooridinates.
+//      Iterate over it using a foreach-loop and find the longest Vector. Print out the longest Vector.
+// 2.   Modify the code in 1. to find also the shortest Vector. Printout both the longest and the shortest vectors.
+// 3.   Initialize a string[] with the words in "A wonderful bird is the pelican" use string function Split().
+//      Iterate over the string[] and print out each word.
+// 4.   In the foreach-loop use continue to skip the printout of the word "wonderful".
+
