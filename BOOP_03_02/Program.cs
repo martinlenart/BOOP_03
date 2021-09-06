@@ -34,3 +34,5 @@ namespace BOOP_03_02
         }
     }
 }
+//Exercises:
+//1.    Same exercise as in BOOP_03_01 but with a do while. 

@@ -4,6 +4,29 @@ namespace BOOP_03_04
 {
     class Program
     {
+        #region Exercise
+        public enum PlayingCardColor
+        {
+            Heart = 0b1,
+            Diamond = 0b1 << 1,
+            Club = 0b1 << 2,
+            Spade = 0b1 << 3,
+
+            Red = Heart | Diamond,
+            Black = Club | Spade
+        }
+        public enum PlayingCardValue
+        {
+            Ace = 1,
+            One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
+            Knight, Queen, King
+        }
+        public struct PlayingCard
+        {
+            public PlayingCardColor Color;
+            public PlayingCardValue Value;
+        }
+        #endregion
         public enum MonthOfYear
         {
             Undefined = 0,
@@ -39,3 +62,7 @@ namespace BOOP_03_04
         }
     }
 }
+//Exercises:
+//1.    Modify above code so in the foreach-loop each character in s1 that is not a ' ' is written
+//2.    Use a foreach-loop to print out each member PlayingCardColor (in region exercise) and the integer constant the
+//      member is associated with.
