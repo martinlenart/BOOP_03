@@ -50,3 +50,10 @@ namespace BOOP_03_09
         }
     }
 }
+// Exercise:
+// 1.   Make multidimensionals jagged array with 3 rows, each row with different number of columns (e.g., 2, 4, 1 columns) of the types bool, double, long, string.
+//      Initialize the arrays with some values.
+// 2.   Iterate over rows and columns and printout the values
+//      - using nested foreach-loops
+//      - using nested for-loops
+//      Which of the nested loop structures were most convenient to work with?

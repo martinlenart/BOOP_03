@@ -4,7 +4,6 @@ namespace BOOP_03_07
 {
     class Program
     {
-
         #region Exercise
         struct Point
         {

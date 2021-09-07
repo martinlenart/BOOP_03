@@ -42,3 +42,11 @@ namespace BOOP_03_08
         }
     }
 }
+// Exercise:
+// 1.   Make multidimensionals array 3x3 in size of the types bool, double, long, string. Initialize them with some values.
+//      Iterate over rows and columns and printout the values using nested for-loops
+// 2.   Make an multidimensional array of struct Point, 2x2 in size. Initialize it with 4 different Point cooridinates.
+//      - Iterate over the array using two nested foreach-loops and find the longest Vector. Print out the longest Vector.
+//      - Iterate over the array using two nested for-loops and find the longest Vector. Print out the longest Vector.
+//      - Iterate over the array using two nested while-loops and find the longest Vector. Print out the longest Vector.
+//      Which of the nested loop structures were most convenient to work with?

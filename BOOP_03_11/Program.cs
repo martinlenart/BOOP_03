@@ -25,9 +25,20 @@ namespace BOOP_03_11
             Console.WriteLine(lastElement);  // u
             Console.WriteLine(slice4);       // ou
             Console.WriteLine(slice3);       // i
+
+            string slicetest = @"there was ""quote""";
+            string substring = slicetest[4..];
+            Console.WriteLine(substring);
         }
     }
 
     //Exercises
-    //1.    Create a new sub array using slicing
+    //1.    Create a string variable and initiate it with the value:
+    //      "There was an Old Man with a beard. Who said, "It is just as I feared!"
+    //      - Remember Verbatim string for easy insertion of quotation mark
+    //      - use slicing to create a substring containing: 
+    //      Old Man with a beard.Who said, "It is just as I feared!"
+    //      - use slicing to create a substring containing: 
+    //      "It is just as I feared!"
+
 }

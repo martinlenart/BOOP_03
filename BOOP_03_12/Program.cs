@@ -59,3 +59,8 @@ namespace BOOP_03_12
         }
     }
 }
+// Exercises
+// 1.   Create variables of nullable value type bool?, float?, double?
+//      - initialize to null
+//      - ??= operators to assign the variable a value
+//      - Create a second variable of same type and initialze using ?? based on the first variable
