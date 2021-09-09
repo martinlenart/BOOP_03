@@ -12,24 +12,13 @@ namespace BOOP_03_10
 		}
 		public enum PlayingCardColor
 		{
-			Heart = 0b1,
-			Diamond = 0b1 << 1,
-			Club = 0b1 << 2,
-			Spade = 0b1 << 3,
-
-			Red = Heart | Diamond,
-			Black = Club | Spade
+			Clubs, Diamonds, Hearts, Spades         // Poker suit order, Spades highest
 		}
+
 		public enum PlayingCardValue
 		{
-			Ace = 1,
-			Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
-			Knight, Queen, King
-		}
-		public struct PlayingCard
-		{
-			public PlayingCardColor Color;
-			public PlayingCardValue Value;
+			Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
+			Knight, Queen, King, Ace                // Poker Value order
 		}
 		#endregion
 
@@ -79,11 +68,10 @@ namespace BOOP_03_10
 
 // 4.    Create a new VS2019 project called DeckOfCards. Setup Git as version control. Copy the types PlayingCardColor, PlayingCardValue, PlayingCard
 //      (from region Exercise) into the project. Place the types as same level as class Program, i.e, right under the namespace
-// 5.	In Main, make an array of type PlayingCard, call the variable cardDeck1. Initialize the DeckOfCards with 4 playing cards, Ace of Spade, Ace of Club,
-//		Ace of Heart, and Ace of Diamonds.
+// 5.	In Main, make an array of type PlayingCard, call the variable cardDeck1. Initialize the DeckOfCards with 4 playing cards, Ace of Spades, Ace of Clubs,
+//		Ace of Hearts, and Ace of Diamonds.
 //		Print how many cards cardDeck1 has.
 // 6.	Challange: Write code to initialize a complete deck, cardDeck2, of Card with 52 cards, using two nested foreach-loops.
 //		The outer loop, the color of the card, the inner loop the value of the card.  
 //		Print how many cards cardDeck2 has
 //		Hint1: Exercise BOOP_03_04.
-//		Hint2: Remember to use "continue" to skip initialization for enum values Red and Black
