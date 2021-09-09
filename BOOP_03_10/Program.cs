@@ -79,7 +79,7 @@ namespace BOOP_03_10
 
 // 4.    Create a new VS2019 project called DeckOfCards. Setup Git as version control. Copy the types PlayingCardColor, PlayingCardValue, PlayingCard
 //      (from region Exercise) into the project.
-// 5.	Make an array of type PlayingCard, call the variable DeckOfCards. Initialize the DeckOfCards with 4 playing cards, Ace of Spade, Ace of Club,
+// 5.	Make an array of type PlayingCard, call the variable CardDeck. Initialize the DeckOfCards with 4 playing cards, Ace of Spade, Ace of Club,
 //		Ace of Heart, and Ace of Diamonds
 // 6.	Challange: Write code to initialize a complete deck of Card with 52 cards, using two nested for-loops.
 //		The outer loop, the color of the card, the inner loop the value of the card.  Hint: Exercise BOOP_03_04.
