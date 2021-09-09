@@ -18,7 +18,7 @@ namespace BOOP_03_04
         public enum PlayingCardValue
         {
             Ace = 1,
-            One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
+            Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
             Knight, Queen, King
         }
         public struct PlayingCard
@@ -55,7 +55,7 @@ namespace BOOP_03_04
             // in .NET most types that has collections are enumerable, example on the enum,
             // notice I use a trick with typeof() to get access to the collection in the type.
             Console.WriteLine();
-            foreach (var item in typeof(MonthOfYear).GetEnumValues())
+            foreach (MonthOfYear item in typeof(MonthOfYear).GetEnumValues())
             {
                 Console.WriteLine(item);
             }

@@ -59,10 +59,12 @@ namespace BOOP_03_07
     }
 }
 // Exercise:
-// 1.   Make an array of struct Point, initialize it with 10 different Point cooridinates.
-//      Iterate over it using a foreach-loop and find the longest Vector. Print out the longest Vector.
-// 2.   Modify the code in 1. to find also the shortest Vector. Printout both the longest and the shortest vectors.
-// 3.   Initialize a string[] with the words in "A wonderful bird is the pelican" use string function Split().
+// 1.   Create an array of int that is 10 elements in size. Initialize it using a for-loop were each element has value index*2
+// 2.   Create another array of int that is 10 elements in size. Initialize it using a foreach-loop were each element has value index*2
+// 3.   Make an array of struct Point, initialize it with 10 different Point cooridinates.
+//      Iterate over it using a foreach-loop and find the longest Vector. Print out the longest Vector.  
+// 4.   Modify the code in 1. to find also the shortest Vector. Printout both the longest and the shortest vectors.
+// 5.   Initialize a string[] with the words in "A wonderful bird is the pelican" use string function Split().
 //      Iterate over the string[] and print out each word.
-// 4.   In the foreach-loop use continue to skip the printout of the word "wonderful".
+// 6.   In the foreach-loop use continue to skip the printout of the word "wonderful".
 
