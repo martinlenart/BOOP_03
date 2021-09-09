@@ -76,8 +76,10 @@ namespace BOOP_03_10
 // 2.   Make a 1-dimensionalan array of struct Point (from region Exercise), initialize using Simple syntax way.
 //		Tips: To initialize each element in the array you use (you can set X and Y to different values): new Point { X = 0, Y = 0 }
 // 3.	Iterate over the array of type Point and print out all the points.
-// 4.	Make an array of type PlayingCard, call the variable DeckOfCards. Initialize the DeckOfCards with 4 playing cards, Ace of Spade, Ace of Club,
-//		Ace of Heart, and Ace of Diamonds
 
-// 5.	Challange: Write code to initialize a complete deck of Card with 52 cards, using two nested for-loops.
+// 4.    Create a new VS2019 project called DeckOfCards. Setup Git as version control. Copy the types PlayingCardColor, PlayingCardValue, PlayingCard
+//      (from region Exercise) into the project.
+// 5.	Make an array of type PlayingCard, call the variable DeckOfCards. Initialize the DeckOfCards with 4 playing cards, Ace of Spade, Ace of Club,
+//		Ace of Heart, and Ace of Diamonds
+// 6.	Challange: Write code to initialize a complete deck of Card with 52 cards, using two nested for-loops.
 //		The outer loop, the color of the card, the inner loop the value of the card.  Hint: Exercise BOOP_03_04.
