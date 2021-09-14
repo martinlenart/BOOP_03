@@ -29,15 +29,19 @@ namespace BOOP_03_08
 
             // Initialize the array individually
             // The GetLength method of an array returns the length for a given dimension (starting at 0):
-            for (int i = 0; i < matrix.GetLength(0); i++)
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                    matrix[i, j] = i * 25 + j * 43;
+            for (int row = 0; row < matrix.GetLength(0); row++)
+            {
+                for (int col = 0; col < matrix.GetLength(1); col++)
+                {
+                    matrix[row, col] = row * 25 + col * 43;
+                }
+            }
 
             // Write the matrix
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int r = 0; r < matrix.GetLength(0); r++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                    Console.Write($"{matrix[i, j],-4}");
+                for (int c = 0; c < matrix.GetLength(1); c++)
+                    Console.Write($"{matrix[r, c],-4}");
 
                 Console.WriteLine();
             }
