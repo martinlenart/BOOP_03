@@ -14,6 +14,8 @@ namespace BOOP_03_08
                                {3,4,5},
                                {6,7,8}};
 
+            Console.WriteLine(matrix2[1, 2]);  // 5
+
             //Print out a matrix
             for (int row = 0; row < matrix.GetLength(0); row++)
             {
