@@ -8,19 +8,20 @@ namespace BOOP_03_05
         {
             // infinite while
             int i = 0;
-            while (true)
+            while (i<100)
             {
                 Console.Write($"{i,4}");
 
                 if (++i % 20 == 0)
                     Console.WriteLine();
 
-                //break infinite loop after 100 iterations
-                if (i >= 100)
+                //break infinite loop after 5 iterations
+                if (i >= 2)
                     break;
             }
 
             // string is an example of an enumerable
+            Console.WriteLine();
             string s1 = "The quick brown fox";
             foreach (char c in s1)
             {
