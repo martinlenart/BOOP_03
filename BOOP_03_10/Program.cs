@@ -92,4 +92,4 @@ namespace BOOP_03_10
 // 6.	Challange: Write code to initialize a complete deck, cardDeck2, of Card with 52 cards, using two nested for-loops.
 //		The outer loop, the color of the card, the inner loop the value of the card.  
 //		Print how many cards cardDeck2 has
-//		Hint1: Open above region "Hints for Exercise 6"
+//		Hint1: Open above region "Hints for Exercise 6 (The Challange)"
