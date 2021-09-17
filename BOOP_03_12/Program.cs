@@ -45,6 +45,7 @@ namespace BOOP_03_12
             // ?. operator
             Console.WriteLine();
             Point point1 = null;
+
             Point point2 = new Point { X = 50, Y = 100 };
             Console.WriteLine(point1?.X);            // null
             Console.WriteLine(point2?.X);            // 50

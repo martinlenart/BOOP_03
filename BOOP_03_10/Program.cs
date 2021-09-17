@@ -20,6 +20,11 @@ namespace BOOP_03_10
 			Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
 			Knight, Queen, King, Ace                // Poker Value order
 		}
+		public struct PlayingCard
+		{
+			public PlayingCardColor Color;
+			public PlayingCardValue Value;
+		}
 		#endregion
 
 		static void Main(string[] args)
@@ -56,7 +61,20 @@ namespace BOOP_03_10
 			var intArray = new[] { 1, 2, 3 };
 			var boolArray = new[] { true, false, false, true };
 			var decimalArray = new[] { 0M, 1.1M, 2.2M };
-		}
+
+			#region Hints for Exercise 6 (The Challange)
+			//An array of 52 PlayingCard becomes a deck
+			PlayingCard[] completeDeck = new PlayingCard[52];
+
+            //Looping through an enum using a for-loop
+            for (PlayingCardColor c = PlayingCardColor.Clubs; c <= PlayingCardColor.Spades; c++)
+            {
+				//Could you imagne to nest another for-loop here iterating through PlayingCardValue?
+				Console.WriteLine(c);
+            }
+            #endregion
+
+        }
     }
 }
 // Exercise:
@@ -71,7 +89,7 @@ namespace BOOP_03_10
 // 5.	In Main, make an array of type PlayingCard, call the variable cardDeck1. Initialize the DeckOfCards with 4 playing cards, Ace of Spades, Ace of Clubs,
 //		Ace of Hearts, and Ace of Diamonds.
 //		Print how many cards cardDeck1 has.
-// 6.	Challange: Write code to initialize a complete deck, cardDeck2, of Card with 52 cards, using two nested foreach-loops.
+// 6.	Challange: Write code to initialize a complete deck, cardDeck2, of Card with 52 cards, using two nested for-loops.
 //		The outer loop, the color of the card, the inner loop the value of the card.  
 //		Print how many cards cardDeck2 has
-//		Hint1: Exercise BOOP_03_04.
+//		Hint1: Open above region "Hints for Exercise 6"
