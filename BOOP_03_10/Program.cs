@@ -66,16 +66,28 @@ namespace BOOP_03_10
 			//An array of 52 PlayingCard becomes a deck
 			PlayingCard[] completeDeck = new PlayingCard[52];
 
-            //Looping through an enum using a for-loop
-            for (PlayingCardColor c = PlayingCardColor.Clubs; c <= PlayingCardColor.Spades; c++)
+			//Below are two way to loop through an enum type
+
+			Console.WriteLine();
+			//Looping through an enum using a for-loop
+			for (PlayingCardColor c = PlayingCardColor.Clubs; c <= PlayingCardColor.Spades; c++)
             {
 				//Could you imagne to nest another for-loop here iterating through PlayingCardValue?
 				Console.WriteLine(c);
             }
-            #endregion
 
-        }
-    }
+			Console.WriteLine();
+			//Looping through an enum using a for-loop
+			foreach (PlayingCardColor item in typeof(PlayingCardColor).GetEnumValues())
+			{
+				//Could you imagne to nest another foreach-loop here iterating through PlayingCardValue?
+				Console.WriteLine(item);
+			}
+
+			#endregion
+
+		}
+	}
 }
 // Exercise:
 // 1.	Make 1-dimensionals arrays of the types bool, double, long, string.
